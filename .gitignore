@@ -7,7 +7,6 @@
 # pip dist
 dist
 build
-playoff_core.egg-info
 
 # virtual environment
 venv
