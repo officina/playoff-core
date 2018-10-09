@@ -4,7 +4,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="playoff-core",
+    name="playoff_core",
     version="0.9.0",
     author="Mattia Bano",
     author_email="dev@officina.cc",
