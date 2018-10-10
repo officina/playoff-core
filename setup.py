@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="playoff_core",
-    version="0.8.1",
+    version="0.8.2",
     author="Mattia Bano",
     author_email="dev@officina.cc",
     description="Playoff toolbox",
@@ -13,6 +13,12 @@ setuptools.setup(
     long_description_content_type="text/markdown",
     url="https://github.com/officina/playoff-core",
     packages=setuptools.find_packages(),
+    install_requires=[
+        "Playoff",
+        "jwt",
+        "python-dotenv"
+
+    ],
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
