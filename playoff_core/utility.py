@@ -15,7 +15,8 @@ class ParameterException(Exception):
 class Constant(object):
     """Class that define some useful costant"""
     config = configparser.ConfigParser()
-    config.read("settings.ini")
+    path = os.getcwd() + "\\playoff_core\\settings.ini"
+    config.read(path)
 
     VERSION = config.get("constant", "Version")
     PLAYER_ID = config.get("constant", "Player_id")
@@ -56,7 +57,8 @@ class MigrationLogger:
             raise Exception("This class is a singleton!")
         else:
             config = configparser.ConfigParser()
-            config.read("settings.ini")
+            path = os.getcwd() + "\\playoff_core\\settings.ini"
+            config.read(path)
             logger_level = config.get("logger", "Level").upper()
 
             MigrationLogger.__instance = logging.getLogger("migration_logger")
