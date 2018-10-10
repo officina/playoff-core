@@ -15,8 +15,10 @@ In order to use this toolbox, you need:
 - Playoff game;
 - subscription plan that allows to make API calls;
 - a configured client;
-- create a `.env` file containing `Client_ID`, `Client_secret` and `hostname` 
-of the corresponding game.
+- create two files in the project directory:
+    - an `.env` file containing `Client_ID`, `Client_secret` and `hostname` 
+of the corresponding game;
+    - a `settings.ini` file which is explained in a section below.
 
 **Example**:
 

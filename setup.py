@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="playoff_core",
-    version="0.9.1",
+    version="0.8.0",
     author="Mattia Bano",
     author_email="dev@officina.cc",
     description="Playoff toolbox",
