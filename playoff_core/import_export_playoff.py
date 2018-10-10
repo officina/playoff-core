@@ -508,8 +508,8 @@ class ExportData(Export):
                                 .append(player_single_feed)
 
                     index += 1
-                    self.logger.debug("feed " + index + " of " + feed_count +
-                                      " exported")
+                    self.logger.debug("feed " + str(index) + " of " +
+                                      feed_count + " exported")
 
             dump(cloned_players_feed, file, sort_keys=True, indent=4)
 
@@ -699,7 +699,7 @@ class ImportData(Import):
                                              data)
 
                 index += 1
-                self.logger.debug("imported action " + index + " of " +
+                self.logger.debug("imported action " + str(index) + " of " +
                                   feed_count + " feed")
 
     def import_all_data(self):
